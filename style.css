@@ -39,7 +39,7 @@ body {
 header {
     color: #ce1818;
     padding: 20px;
-    background-color: #bcbcbc;
+    background-color: #000000;
 }
 
 /*Alterna o link das páginas*/
@@ -112,7 +112,7 @@ nav a:hover {
 }
 
 footer{
-    background-color: #bcbcbc;
+    background-color: black;
     color: #ce1818;
     font-size: 50px;
     font-family: "Velparde Janeiro', sans-serif";

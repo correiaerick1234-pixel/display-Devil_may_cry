@@ -1,0 +1,163 @@
+@import url('https://fonts.cdnfonts.com/css/dungeon-depths');
+/*Fonte para Titulo*/
+@import url('https://fonts.cdnfonts.com/css/velparde-janeiro');
+/*Fonte para Paragrafo*/
+@import url('https://fonts.cdnfonts.com/css/lt-binary-neue');
+/*Fonte do h3*/
+@import url('https://fonts.cdnfonts.com/css/major-birch');
+
+
+/*Reset Basíco*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: white;
+}
+
+/*Alterando o estilo da seção*/
+#personagem{
+    background-color: #ce1818;
+    padding: 50px 20px; /*Espaçamento interno*/
+}
+
+/*Estilo do titulko dos personagens*/
+#personagem h2{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Dungeon Depths', sans-serif; /*Alterar a fonte do h2*/
+    margin-bottom: 40px;
+}
+
+.contrainer-personagens{
+    display: flex; /*ativa o flexblox*/
+    flex-wrap: wrap; /*quebra a linha se não ho espaço suficiente*/
+    justify-content: center;
+    align-items: stretch; /*deixa os itens com a mesma altura, "esticado" no eixo transvesal*/
+    gap: 30px;
+
+}
+
+/*Alterar os cars dos personagens*/
+.item{
+    width: 250px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex; /*Ativa o flexblox*/
+    flex-direction: column; /*ativa o comportamento de coluna*/
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.item:hover{
+    transform: skewY(-10px);
+    box-shadow: 0 0 10px 5px #75dcd5;
+
+
+}
+
+.item img{
+    width: 100%;
+    height: 220px;
+
+    /*evitar a distorção da imagem*/
+    object-fit: cover;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.item p{
+    color: #75dcd5;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.item h3{
+    color: #ce1818;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tag{
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.híbrido{
+    background-color: crimson;
+}
+
+.caçador{
+    background-color: cadetblue;
+}
+
+.poder{
+    background-color: darkturquoise;
+}
+
+.humano_no{
+    background-color: firebrick;
+}
+
+.uroboros{
+    background-color: springgreen;
+}
+
+.demonio{
+    background-color: red;
+}
+
+.rei{
+    background-color: darkorchid;
+}
+
+.vingador{
+    background-color: cornflowerblue;
+}
+
+.herói{
+    background-color: darkorange;
+}
+
+.humano{
+    background-color: darkgray;
+}
+
+.vice{
+    background-color: dodgerblue;
+}
+
+.corretor{
+    background-color: darkgoldenrod;
+}
+
+/*MEDIA QUERY*/
+
+
+@media(max-width:600px){
+    #personagem h2{
+        font-size: 50px;
+    }
+
+    .item{
+        width: 100%;
+        max-width: 320px;
+    }
+}
